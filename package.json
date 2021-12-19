@@ -1,0 +1,11 @@
+{
+  "name": "score-tracker",
+  "version": "1.0.0",
+  "main": "back-end/server.js",
+  "scripts": {
+    "start": "node back-end/server.js" // this starts the api running
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
