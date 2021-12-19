@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "back-end/server.js",
   "scripts": {
-    "start": "node back-end/server.js" // this starts the api running
+    "start": "node back-end/server.js"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "pg-pool": "^3.4.1"
   }
 }
