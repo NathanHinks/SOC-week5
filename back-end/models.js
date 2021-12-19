@@ -2,7 +2,8 @@ const { database } = require('./db-connection');
 
 async function getAllBootcampers() {
   const databaseResponse = await database.query(
-    'SELECT * FROM bootcamper_scores'
+    // I set it to order by score from high - low just so it looks like a scoreboard on the front end
+    'SELECT * FROM bootcamper_scores ORDER BY score DESC'
   );
 
   // the list of bootcampers we want is stored on the "rows" key, so we just return this

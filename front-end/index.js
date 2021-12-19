@@ -1,3 +1,4 @@
+// gets the empty list from the html so we can add list items to it
 const bootcamperList = document.querySelector('.bootcamper-list');
 
 async function increaseBootcampersScore(bootcamperId) {
@@ -24,7 +25,7 @@ async function getBootcampers() {
     // create a button to increase bootcamper's score
     const button = document.createElement('button');
     button.textContent = '➕';
-    // set the button to update the score for the given bootcamper
+    // set the button to update the score for the given bootcamper (using unique id)
     button.addEventListener('click', function() {
       increaseBootcampersScore(bootcamper.id);
     });
@@ -35,8 +36,6 @@ async function getBootcampers() {
     // add the new list item to our existing list of bootcampers
     bootcamperList.appendChild(listItem);
   });
-
-  console.log(bootcampers);
 }
 
 // retrieve the data from the API on page load
